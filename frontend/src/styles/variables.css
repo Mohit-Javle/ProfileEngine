@@ -1,0 +1,15 @@
+:root {
+  --bg-main: radial-gradient(circle at top, #0f172a, #020617);
+  --glass: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+
+  --neon-blue: #38bdf8;
+  --neon-purple: #a78bfa;
+  --neon-green: #4ade80;
+
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+
+  --radius: 18px;
+  --blur: blur(18px);
+}

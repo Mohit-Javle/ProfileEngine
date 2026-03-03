@@ -1,0 +1,127 @@
+.ai-table-section {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.table-card {
+  padding: 20px;
+}
+
+.table-title {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.empty-text {
+  opacity: 0.7;
+}
+
+/* TABLE STYLE */
+.ai-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ai-table th,
+.ai-table td {
+  padding: 12px 14px;
+  text-align: left;
+}
+
+.ai-table thead {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ai-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ai-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.bio-cell {
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-card {
+  overflow-x: auto;
+}
+.btn-edit {
+  background: #facc15;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Action buttons container */
+.action-btns {
+  display: flex;
+  gap: 8px;
+}
+
+/* EDIT button – accent / highlight */
+.btn-edit {
+  background: linear-gradient(135deg, #facc15, #fde047);
+  color: #111827;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(250, 204, 21, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-edit:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 28px rgba(250, 204, 21, 0.55);
+}
+
+/* DELETE button – danger but subtle */
+.btn-delete {
+  background: rgba(239, 68, 68, 0.15);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: all 0.25s ease;
+}
+
+.btn-delete:hover {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fecaca;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.35);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.table-search {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 260px;
+  font-size: 14px;
+}

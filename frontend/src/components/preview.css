@@ -1,0 +1,85 @@
+.preview-system {
+  padding: 3rem 2.5rem;
+}
+
+/* HEADER */
+.preview-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.preview-header h2 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.role {
+  font-size: 0.95rem;
+  color: var(--neon-green);
+  margin-top: 0.2rem;
+}
+
+.meta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* SECTIONS */
+.preview-section {
+  margin-bottom: 2rem;
+}
+
+.preview-section h4 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  color: var(--neon-blue);
+}
+
+/* CONTACT */
+.preview-section p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-chip {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--neon-blue),
+    var(--neon-purple)
+  );
+  color: #020617;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* BIO */
+.bio {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-main);
+}
+.avatar-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
