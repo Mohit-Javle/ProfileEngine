@@ -57,7 +57,7 @@ export default function Pricing() {
     const automatedDateTime = now.toISOString().slice(0, 16);
 
     try {
-      await axios.post("http://localhost:5000/api/orders", {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/orders`, {
         email: formData.email,
         plan: selectedPlan.name,
         amount: selectedPlan.price,

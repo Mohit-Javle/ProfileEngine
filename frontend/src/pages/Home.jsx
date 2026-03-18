@@ -29,7 +29,7 @@ export default function Home() {
 
     const fetchProfiles = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/profiles");
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/profiles`);
 
         console.log("API RESPONSE 👉", res.data);
 
@@ -66,16 +66,16 @@ export default function Home() {
     try {
       if (editingId) {
         await axios.put(
-          `http://localhost:5000/api/profiles/${editingId}`,
+          `${import.meta.env.VITE_API_URL}/api/profiles/${editingId}`,
           data
         );
         setEditingId(null);
       } else {
-        await axios.post("http://localhost:5000/api/profiles", data);
+        await axios.post(`${import.meta.env.VITE_API_URL}/api/profiles`, data);
       }
 
       // 🔁 RE-FETCH AFTER SAVE
-      const res = await axios.get("http://localhost:5000/api/profiles");
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/profiles`);
       setRecords(Array.isArray(res.data) ? res.data : res.data.data || []);
 
       setData(emptyForm);
@@ -102,7 +102,7 @@ export default function Home() {
     if (!window.confirm("Are you sure you want to delete?")) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/profiles/${id}`);
+      await axios.delete(`${import.meta.env.VITE_API_URL}/api/profiles/${id}`);
 
       if (editingId === id) {
         setEditingId(null);
@@ -110,7 +110,7 @@ export default function Home() {
         setServerErrors({});
       }
 
-      const res = await axios.get("http://localhost:5000/api/profiles");
+      const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/profiles`);
       setRecords(Array.isArray(res.data) ? res.data : res.data.data || []);
     } catch (err) {
       console.error("Delete error:", err);
